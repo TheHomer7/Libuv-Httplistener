@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A fully managed HttpListener for the .NET Core.</Description>
+    <Authors>derek</Authors>
+    <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;</TargetFrameworks>
+    <DefineConstants>TRACE;SECURITY_DEP;DNXCORE50</DefineConstants>
+    <PublicSign>true</PublicSign>
+    <AssemblyName>Mono.Net.HttpListener</AssemblyName>
+    <OutputType>Library</OutputType>
+    <AssemblyOriginatorKeyFile>../httpListener.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PackageId>Mono.Net.HttpListener</PackageId>
+    <UserSecretsId>aspnet5-TR.AppServer.Interfaces-20160330053024</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Security">
+      <HintPath>..\libs\Mono.Security.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
